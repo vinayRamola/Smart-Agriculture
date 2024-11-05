@@ -1,0 +1,105 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #4CAF50; /* A green tone for agriculture */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+
+  .logo a img{
+    height:110px;
+    width:110px;
+    border-radius: 50%;
+  }
+  
+  /* Navigation links styling */
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLinks li {
+    display: inline;
+  }
+  
+  .navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a:hover {
+    color: #e0e0e0;
+  }
+  
+  /* Sign In button styling */
+  .navButton {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navButton:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 5px 20px;
+    }
+  
+    /* Stack the navigation links vertically */
+    .navLinks {
+      display: none;
+      position: absolute;
+      top: 99px;
+      left: 0;
+      width: 100%;
+      background-color: #4CAF50;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 0;
+    }
+  
+    .navLinks li {
+      text-align: center;
+    }
+  
+    .navLinks a {
+      font-size: 1.2rem;
+    }
+  
+    /* Display the nav links when the menu is active */
+    .navLinks.active {
+      display: flex;
+    }
+  
+    /* Hamburger icon for mobile menu */
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+    }
+  
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+      transition: transform 0.3s;
+    }
+  }
+  
